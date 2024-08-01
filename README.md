@@ -7,3 +7,7 @@ This narrative visualization explores the dominance of USA Basketball in both th
 CS416 Project by Prithvi Balaji
 
 Link: https://prithbalaji.github.io/cs416/
+
+CS416 Narrative Project Essay:
+
+Link: https://docs.google.com/document/d/15PhLrlA4f_-p__86Uw5MGiravXExd4GC356awAkaTio/edit?usp=sharing
