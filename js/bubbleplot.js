@@ -421,7 +421,7 @@ function BubbleChart(idcall) {
         htmlInfo = "<b>Country:</b> " + page.Country + '<br>' +
             "&emsp;&#8226;<b>&emsp;Population:</b> " + d3.format(',.3s')(getPopulation(page) * 1e6).replace(/G/, "B") + '<br>' +
             "&emsp;&#8226;<b>&emsp;GDP per Capita:</b> " + "$" + d3.format(',.3s')(getGDPperCapita(page)) + '<br><br>' +
-            "<b>Total medals won in these Olympics:</b> " + totalAccolades + '<br>' +
+            "<b>Total Accolades won:</b> " + totalAccolades + '<br>' +
             "&emsp;&#8226;<b>&emsp;Total Medals:</b> " + totalmedals + '<br>' +
             "&emsp;&#8226;<b>&emsp;NBA All-Star Appearances:</b> " + allstars + '<br>' +
             "&emsp;&#8226;<b>&emsp;All-NBA Appearances:</b> " + allnba;
