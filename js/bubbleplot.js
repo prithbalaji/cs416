@@ -422,7 +422,7 @@ function BubbleChart(idcall) {
             "&emsp;&#8226;<b>&emsp;Population:</b> " + d3.format(',.3s')(getPopulation(page) * 1e6).replace(/G/, "B") + '<br>' +
             "&emsp;&#8226;<b>&emsp;GDP per Capita:</b> " + "$" + d3.format(',.3s')(getGDPperCapita(page)) + '<br><br>' +
             "<b>Total Accolades won:</b> " + totalAccolades + '<br>' +
-            "&emsp;&#8226;<b>&emsp;Total Medals:</b> " + totalmedals + '<br>' +
+            "&emsp;&#8226;<b>&emsp;Total Medals in all Competitions:</b> " + totalmedals + '<br>' +
             "&emsp;&#8226;<b>&emsp;NBA All-Star Appearances:</b> " + allstars + '<br>' +
             "&emsp;&#8226;<b>&emsp;All-NBA Appearances:</b> " + allnba;
         return htmlInfo;
