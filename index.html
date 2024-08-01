@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata about the document -->
+    <meta charset="utf-8"> <!-- Character encoding set to UTF-8 for international character support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures responsive design by setting viewport for various devices -->
+    <meta name='author' content='Prithvi Balaji'> <!-- Metadata specifying the author of the page -->
+    <title>The Dominance of USA Basketball</title> <!-- Title of the webpage displayed in the browser tab -->
+
+    <!-- Link to external CSS file for styling -->
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    
+    <!-- Load D3.js library for data visualization -->
+    <script src='https://d3js.org/d3.v4.min.js'></script>
+
+    <!-- Load custom JavaScript files for visualizations and interactivity -->
+    <script type="text/javascript" src='js/bubbleplot.js' charset='utf-8'></script> <!-- Script for bubble plot visualization -->
+    <script type="text/javascript" src='js/freqplot.js' charset='utf-8'></script> <!-- Script for frequency plot visualization -->
+    <script type="text/javascript" src='js/index.js' charset='utf-8'></script> <!-- Script for managing the interaction logic -->
+</head>
+
+<body>
+    <!-- Header section containing the main title of the webpage -->
+    <div id='header'>
+        <h1 style="text-align:center">The Dominance of USA Basketball</h1> <!-- Centered header text -->
+    </div>
+
+    <!-- Introduction section providing context about the visualizations -->
+    <div id='introDivId'>
+        <p style="text-align:center;">
+            <!-- Image with descriptive alt text centered in the introduction section -->
+            <img src='img/usa.jpeg' alt="The world's greatest shooter attempting a 3 point shot." style="height:300px;">
+        </p>
+        <!-- Paragraph providing a brief narrative about USA Basketball's dominance and the visualization's purpose -->
+        <p> In the past 16 years, USA Basketball has dominated since the 2004 collapse against Argentina. 
+            By how much does USA dominate over other countries? Let's visualize this with total accolades in different countries over 16 years. 
+            Other countries have surged in the basketball community. Let's take a look at which ones.
+        </p>
+    </div>
+
+    <br> <!-- Line break for spacing -->
+
+    <!-- Button section for navigation and user interaction -->
+    <div id='buttonsDivId'>
+        <!-- Back button for navigating to previous Olympic events -->
+        <button id="bp" type="button" class="btn btn-default" style="visibility : hidden" onclick="backButton()">
+            &laquo; Previous Olympics
+        </button>
+
+        <!-- Button to explore Olympic Men's Basketball data -->
+        <button id="bs" type="button" class="btn-summer btn-default" onclick="Olympics()">
+            Explore Olympic Mens Basketball
+        </button>
+
+        <!-- Home button to return to the first page, initially hidden -->
+        <button id="bh" type="button" class="btn-home btn-default" style="visibility : hidden" onclick="firstPage()">
+        </button>
+
+        <!-- Button to explore FIBA Men's Basketball data -->
+        <button id="bw" type="button" class="btn-winter btn-default" onclick="FIBA()">
+            Explore FIBA Mens Basketball
+        </button>
+
+        <!-- Next button for navigating to subsequent Olympic events, initially hidden -->
+        <button id="bn" type="button" class="btn btn-default" style="visibility : hidden" onclick="forwardButton(0)">
+            Next Olympics &raquo;
+        </button>
+    </div>
+
+    <!-- Div for displaying the list of years in the selected dataset -->
+    <div id='yearsDivId'></div>
+
+    <!-- Div for displaying information about the venues of the events -->
+    <div id="venueDivId"></div>
+
+    <!-- Div for displaying the bubble chart visualization -->
+    <div id='scatterDivId'></div>
+
+    <!-- Div for displaying the bar chart visualization -->
+    <div id='barDivId'></div>
+
+    <!-- Div for displaying the data source information -->
+    <div id='sourceDivId'></div>
+
+    <br> <!-- Line break for spacing -->
+
+    <!-- Footer section providing author credit and copyright information -->
+    <div id="footer">
+        <p>&copy; 2024 by Prithvi Balaji.</p> <!-- Footer text with copyright notice -->
+    </div>
+</body>
+</html>

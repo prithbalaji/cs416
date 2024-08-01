@@ -1,0 +1,7 @@
+{
+    "data/summerMensBasketballLocations.csv" : "https://www.basketball-reference.com/",
+    "data/summerMensBasketball.csv" :
+        "https://www.basketball-reference.com/",
+    "data/FibaMensBasketballLocations.csv" : "https://www.basketball-reference.com/",
+    "data/FibaMensBasketball.csv" : "https://www.basketball-reference.com/"
+}
